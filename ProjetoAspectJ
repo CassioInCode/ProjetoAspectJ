@@ -1,0 +1,21 @@
+package com.exemplo;
+
+public class MainApp {
+
+    public static void main(String[] args) {
+        GPS gps = new GPS();
+        gps.start(); // Exemplo de uso do GPS
+
+        LPS lps = new LPS();
+        lps.connect(); // Exemplo de uso do LPS
+
+        GlobalSat globalSat = new GlobalSat();
+        globalSat.initialize(); // Exemplo de uso do GlobalSat
+
+        NokiaSistem nokiaSistem = new NokiaSistem();
+        nokiaSistem.run(); // Exemplo de uso do NokiaSistem
+
+        GoLink goLink = new GoLink();
+        goLink.activate(); // Exemplo de uso do GoLink
+    }
+}
